@@ -1,0 +1,62 @@
+EX NO 7(E): C PROGRAM TO READ A FILE NAME FROM USER AND CREATETHAT FILE AND INSERT STUDENT ROLL NUMBERS IN TO THAT FILE
+
+
+AIM:
+To write a program to read a file name from user and create that file and insert student rollnumbers in to that file.
+
+ALGORITHM:
+1. Start.
+2. Define a variables.
+3. Write a program to read a file name from user and create that file and insert student
+roll numbers in to that file.
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End.
+
+
+PROGRAM:
+#include <stdio.h>
+int main()
+{
+FILE *p;
+char name[100];
+int num;
+int id;
+char text[100];
+float m;
+scanf("%s",name);
+scanf("%d",&num);
+p=fopen("name","w");
+printf("%s Opened\n",name);
+{
+scanf("%d %s %f",&id,text,&m);
+fprintf(p,"%d %s %f",id,text,m);
+}
+fclose(p);
+printf("Data added Successfully");
+
+
+To write a program to read a file name from user and create that file and insert student rollnumbers in to that file.
+
+
+Developed by:  Prem kumar K
+RegisterNumber:  212223060209
+
+INPUT:
+
+Sample.txt
+2
+90
+80
+
+
+OUTPUT:
+
+Sampl.txt File Opened  
+Data added Successfully
+
+
+
+RESULT:
+Thus, the program is executed and verified successfully
